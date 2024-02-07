@@ -5,13 +5,13 @@ import pygame
 import sys
 import button
 
-weight_input_to_hidden1 = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data\\weight_ith1.npy"))
-weight_hidden2_to_output = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data\\weight_h2to.npy"))
-weight_hidden1_to_hidden2 = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data\\weight_h1th2.npy"))
+weight_input_to_hidden1 = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data/weight_ith1.npy"))
+weight_hidden2_to_output = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data/weight_h2to.npy"))
+weight_hidden1_to_hidden2 = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data/weight_h1th2.npy"))
 
-bias_input_to_hidden1= np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data\\bias_ith1.npy"))
-bias_hidden2_to_output = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data\\bias_h2to.npy"))
-bias_hidden1_to_hidden2 = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data\\bias_h1th2.npy"))
+bias_input_to_hidden1= np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data/bias_ith1.npy"))
+bias_hidden2_to_output = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data/bias_h2to.npy"))
+bias_hidden1_to_hidden2 = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Data/bias_h1th2.npy"))
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
